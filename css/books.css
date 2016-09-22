@@ -16,20 +16,20 @@ a {
 .main-header {
     background: url('../images/books_header_bg.jpg');
     color: #fff;
-    padding: 35px 0;
+    padding: 30px 0;
 }
 
 .site-branding {
     background: url('../images/books.MD_logo_icon.png') no-repeat 0 15px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 25px 0;
     text-align: center;
     width: 700px;
 }
 
 .site-branding h1 {
     color: #fff;
-    font: 300 1.5rem/1.4 Roboto Slab;
+    font: 300 1.9rem/1.4 Roboto Slab;
     margin: 0 0 0 100px;
     padding: 0;
     text-align: left;
@@ -41,20 +41,25 @@ a {
 
 .site-branding h2 {
     color: #6b8607;
-    font: 100 1rem/1.4 Roboto;
-    margin: 0 0 30px 100px;
+    font: 400 1rem/1.4 Roboto;
+    margin: 0 0 40px 100px;
     padding: 0;
     text-align: left;
 }
 
+/******************************************************************************
+ * Search Box *****************************************************************
+ ******************************************************************************/
+
 .search {
     position: relative;
+
 }
 
 input {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.45);
     border: 0;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #6b8607;
     display: inline-block;
     font: normal 1rem Roboto;
@@ -90,8 +95,8 @@ input {
 button {
     background-color: #fff;
     border: 0;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
     color: #a7c932;
     padding: 12px 20px 15px;
     position: absolute;
@@ -167,14 +172,16 @@ section .wrapper {
 }
 
 .content header ul li {
+    color: #aeaeae;
     display: inline-block;
     font-size: 0.8rem;
     margin: 0;
     padding: 0 10px;
 }
 
-.content header ul li:first-of-type {
+.content header ul li.author {
     padding-left: 0;
+    color: #000;
 }
 
 .btn {
@@ -209,7 +216,12 @@ section footer {
 /******************************************************************************
 * Clear Fix ******************************************************************
 ******************************************************************************/
-
-.cf {
-    clear: both;
+.cf:before,
+.cf:after {
+    content: '';
+    display: table;
 }
+
+.cf:after { clear: both; }
+
+.cf { *zoom: 1; }
