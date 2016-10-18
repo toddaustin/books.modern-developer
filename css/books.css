@@ -395,7 +395,7 @@ section footer {
     background-color: transparent;
     border: 0;
     clear: both;
-    margin-top: 25px;
+    margin: 25px 0 50px;
 }
 
 section footer ul {
